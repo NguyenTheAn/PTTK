@@ -37,6 +37,8 @@ public class ThanhVienDAO extends DAO{
         }
         
         MongoCollection<Document> collection = this.database.getCollection("ThanhVien");
+        Integer id = (int)(Math.random() * (9999 - 1000 + 1) + 1000);
+        tv.setId(id.toString());
         Document doc = new Document("ID", tv.getId())
                 .append("Username", tv.getTenDangNhap())
                 .append("Password", tv.getMatKhau())
@@ -57,7 +59,7 @@ public class ThanhVienDAO extends DAO{
         // Getting the iterator
         ArrayList<ThanhVien> UserInfo = new ArrayList<>();
         for (Document doc : iterDoc) {
-            Integer id = (Integer) doc.get("ID");
+            String id = (String) doc.get("ID");
             String TenDangNhap = (String) doc.get("Username");
             String MatKhau = (String) doc.get("Password");
             String GioiTinh = (String) doc.get("Gender");

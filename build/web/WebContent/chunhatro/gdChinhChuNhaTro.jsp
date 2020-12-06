@@ -18,9 +18,9 @@
         <h2> Trang chủ chủ nhà trọ </h2>
         <button onclick="openPage('gdQLDoDung.jsp')">Quản lý đồ dùng</button>
         <br>
-        <button onclick="openPage('gdchonnganh.jsp')">Cập nhật trạng thái thay thế hỏng hóc của đồ dùng</button>
+        <button onclick="openPage('gdTimKiemPhong.jsp')">Cập nhật trạng thái thay thế hỏng hóc của đồ dùng</button>
         <br>
-        <button onclick="openPage('gdchonnganh.jsp')">Thống kê đồ dùng</button>
+        <button onclick="openPage('gdXemThongKe.jsp')">Thống kê</button>
         <br>
         <button onclick="history.back()">Quay Lại</button>
 

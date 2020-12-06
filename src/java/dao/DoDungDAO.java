@@ -102,4 +102,16 @@ public class DoDungDAO extends DAO{
         }
         return list;
     }
+    
+    public DoDung getDoDungById(String IdDoDung){
+        ArrayList<DoDung> list = this.Read();
+        ArrayList<DoDung> result = new ArrayList<>();
+        for (DoDung dd : list){
+            String ID = dd.getId();
+            if (ID.equals(IdDoDung)){
+                return dd;
+            }
+        }
+        return null;
+    }
 }
