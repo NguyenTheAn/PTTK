@@ -11,18 +11,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Giao Dien Chinh</title>
+        <title>Giao Dien QL Do Dung</title>
         <%@include file ="../header.jsp" %>
     </head>
     <body>
-        <h2> Trang chủ chủ nhà trọ </h2>
-        <button onclick="openPage('gdQLDoDung.jsp')">Quản lý đồ dùng</button>
+        <h2> Quan Ly Do Dung </h2>
+        <button onclick="openPage('gdNhapDoDung.jsp')">Thêm</button>
         <br>
-        <button onclick="openPage('gdchonnganh.jsp')">Cập nhật trạng thái thay thế hỏng hóc của đồ dùng</button>
+        <button onclick="openPage('gdTimKiemDoDung.jsp?job=modify')">Sửa</button>
         <br>
-        <button onclick="openPage('gdchonnganh.jsp')">Thống kê đồ dùng</button>
+        <button onclick="openPage('gdTimKiemDoDung.jsp?job=delete')">Xóa</button>
         <br>
         <button onclick="history.back()">Quay Lại</button>
+
 
     </body>
 </html>

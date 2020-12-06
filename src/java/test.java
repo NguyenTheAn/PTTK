@@ -1,6 +1,8 @@
 
+import dao.DoDungDAO;
 import dao.ThanhVienDAO;
 import java.util.ArrayList;
+import model.DoDung;
 import model.ThanhVien;
 
 /*
@@ -15,8 +17,8 @@ import model.ThanhVien;
 public class test {
 
     public static void main(String[] args) {
-        ThanhVienDAO dao = new ThanhVienDAO();
-//        ThanhVien tv = new ThanhVien(1234, "ligirk", "123456", "Nam", "0975581382", "Chu Nha", "Nguyen The An", "Ha Noi", "12/12/99");
-//        dao.SaveUser(tv);
+        DoDungDAO dao = new DoDungDAO();
+        ArrayList<DoDung> list = dao.timKiem("choi");
+        System.out.println(list.size());
     }
 }

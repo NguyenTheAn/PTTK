@@ -15,18 +15,14 @@
         <%@include file ="../header.jsp" %>
     </head>
     <body>
-        <%
-            ThanhVien chunhatro = (ThanhVien) session.getAttribute("chunhatro");
-            if(chunhatro==null){
-                response.sendRedirect("../gdDangNhap.jsp?err=timeout");
-            }
-        %>
         <h2> Trang chủ chủ nhà trọ </h2>
-        <button onclick="openPage('gdchonnganh.jsp')">Quản lý đồ dùng</button>
+        <button onclick="openPage('gdQLDoDung.jsp')">Quản lý đồ dùng</button>
         <br>
         <button onclick="openPage('gdchonnganh.jsp')">Cập nhật trạng thái thay thế hỏng hóc của đồ dùng</button>
         <br>
         <button onclick="openPage('gdchonnganh.jsp')">Thống kê đồ dùng</button>
+        <br>
+        <button onclick="history.back()">Quay Lại</button>
 
     </body>
 </html>
